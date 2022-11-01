@@ -2,6 +2,7 @@
 import './App.css';
 import About from './components/About';
 import StyledContactMe from './components/StyledContactMe';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function App() {
 
@@ -13,9 +14,10 @@ function App() {
 
     <div className="navbar">
       <ul >
-        <li><a href='/'>Projects</a></li>
-        <li><a href='/'>Experience</a></li>
-        <li ><a href='/'>Skills</a></li>
+        <li><AnchorLink href='#projxts'>Projects</AnchorLink></li>
+        <li><AnchorLink href='#exp'>Experience</AnchorLink></li>
+        <li ><AnchorLink href='#skill-div'>Skills</AnchorLink></li>
+        <li ><AnchorLink href='#contactme'>Contact</AnchorLink></li>
    
         {/* <li ><a href='About'>About</a></li> */}
       </ul>
@@ -51,7 +53,7 @@ function App() {
      
   
    {/* PROJEXT DIV */}
-<div className="projext">
+<div className="projext" id ='projxts'>
    <div className="projext-div">
     <div className="primary">
        <div className="p1">
@@ -109,7 +111,7 @@ function App() {
 
 {/* EXPERIENCES DIV */}
 
-<div className="experiencs">
+<div className="experiencs" id='exp'>
     <div className="exp-div">
      <div className="primary">
        <div className="p1">
@@ -137,7 +139,7 @@ function App() {
       
 
       {/* SKILLS DIV */}
-      <div className="skill-div">
+      <div className="skill-div" id='skill-div'>
 
       
         
@@ -199,7 +201,7 @@ function App() {
 <br/>
 <br/>
    <hr style={{ border : " 0.5px solid green" ,width:"100%" ,marginRight :"300px"}}/>
-<div className="contactMe">
+<div className="contactMe" id='contactme'>
            <StyledContactMe/>
 
 
